@@ -2,7 +2,7 @@
 
 ## SQL + Python + Power BI
 
-## 📌 Overview  
+## 📌 Overview 
 
 This project analyzes a Flipkart-style e-commerce dataset to uncover business insights related to sales performance, product demand, pricing, discounts, customer ratings, delivery efficiency, return policies, seller performance, and brand/category performance.
 
