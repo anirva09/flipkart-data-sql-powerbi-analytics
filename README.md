@@ -94,6 +94,7 @@ Key metrics and visuals:
 
 ### Executive Overview
 <img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/3a5ca146-246c-4095-8ce6-97dc911efe69" />
+<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/3ff89c5d-08b8-42ce-bad8-0acd9720b1e1" />
 
 
 ### Product & Customer Analytics
