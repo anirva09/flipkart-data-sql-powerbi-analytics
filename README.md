@@ -93,16 +93,16 @@ Key metrics and visuals:
 ## 🖼️ Dashboard Screenshots
 
 ### Executive Overview
-<img width="1314" height="760" alt="flipkart_dashboard1" src="https://github.com/user-attachments/assets/0f6d3e34-5012-452d-8aed-3403ff3b4e34" />
-<img width="1437" height="829" alt="flipkart_dashboard2 1" src="https://github.com/user-attachments/assets/6ff45480-2e7b-40d3-9dce-6b69b27db8c6" />
+<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/3a5ca146-246c-4095-8ce6-97dc911efe69" />
+
 
 ### Product & Customer Analytics
+<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/8189392e-87b4-4888-841a-1acf3347fcff" />
 
-<img width="1422" height="822" alt="flipkart_dashboard2" src="https://github.com/user-attachments/assets/6de53c07-8d47-421f-9762-b6b995692985" />
 
 ### Operations & Seller Analytics
+<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/550dfa4e-24ed-4506-b8fc-c2316f6cfe24" />
 
-<img width="1418" height="817" alt="flipkart_dashboard3" src="https://github.com/user-attachments/assets/603b1641-4e1f-424a-b9b4-e5be4864f368" />
 
 ---
 
