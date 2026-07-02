@@ -1,146 +1,150 @@
-# 🛒 Flipkart E-Commerce Analytics Dashboard
+# Flipkart E-Commerce Analytics Dashboard
 
-## SQL + Python + Power BI
-
-## 📌 Overview 
-
-This project analyzes a Flipkart-style e-commerce dataset to uncover business insights related to sales performance, product demand, pricing, discounts, customer ratings, delivery efficiency, return policies, seller performance, and brand/category performance.
-
-The project was first analyzed using **SQL in Jupyter Notebook** with **Python pandas**, and later converted into an interactive **Power BI dashboard**.
+A SQL, Python and Power BI-based analytics project built to analyse a Flipkart-style e-commerce business across revenue performance, product demand, customer ratings, discounts, delivery efficiency, return policies, seller performance and brand/category contribution.
 
 ---
 
-## 🧰 Tools Used
+## Project Overview
 
-* SQL
-* Python
-* Jupyter Notebook
-* pandas
-* SQLAlchemy
-* Power BI
-* Excel
+This project presents an end-to-end **Flipkart E-Commerce Analytics Dashboard** using **SQL, Python, Jupyter Notebook, pandas and Power BI**.
+
+The project was first analysed using SQL queries inside Jupyter Notebook with Python support, and later converted into an interactive Power BI dashboard for business reporting and decision-making.
+
+The dashboard helps understand sales performance, product behaviour, seller contribution, customer response, discount impact, delivery performance and return policy patterns.
 
 ---
 
-## 🗂️ Database Schema
+## Business Problem
 
-The project uses the following relational tables:
+E-commerce platforms handle large volumes of product, seller, order, pricing, logistics and review data. Business teams need a structured view to answer questions such as:
 
-* **products** → product name, category, brand, color, size, weight, warranty
-* **orders** → order ID, product ID, seller, price, discount, final price, units sold, stock, listing date
-* **reviews** → rating, review count, product score
-* **logistics** → delivery days and shipping weight
-* **returns** → return policy days and returnable status
-* **sellers** → seller name, seller city, seller rating
-* **payments** → available payment modes
+* Which categories and products generate the highest revenue?
+* Which sellers contribute most to business performance?
+* How do discounts affect revenue and demand?
+* Which products have strong customer ratings and reviews?
+* Which categories face delivery or return policy issues?
+* Which brands perform well across revenue and customer response?
 
----
-
-## 📊 Power BI Dashboard Pages
-
-### 1. Executive Overview
-
-This page gives a high-level view of business performance.
-
-Key metrics and visuals:
-
-* Total Revenue
-* Total Units Sold
-* Average Rating
-* Average Discount
-* Total Products
-* Total Sellers
-* Top 5 Categories by Revenue
-* Monthly Revenue Trend
-* Payment Method Distribution
-* Top 5 Products by Revenue
+This project solves the problem by creating a structured analytics workflow using SQL for analysis and Power BI for dashboard reporting.
 
 ---
 
-### 2. Product & Customer Analytics
+## Tools Used
 
-This page focuses on product performance, customer response, and discount behavior.
-
-Key metrics and visuals:
-
-* Average Product Price
-* Average Product Score
-* Average Review Count
-* Average Rating
-* Revenue Contribution by Brand
-* Revenue by Discount Range
-* Top Performing Products Table
+| Tool             | Purpose                                    |
+| ---------------- | ------------------------------------------ |
+| SQL              | Data querying and business analysis        |
+| Python           | Data handling and workflow support         |
+| Jupyter Notebook | SQL analysis environment                   |
+| pandas           | Data reading and result handling           |
+| SQLAlchemy       | Database connection                        |
+| Power BI         | Dashboard development and visual analytics |
+| Excel            | Initial data review and supporting checks  |
 
 ---
 
-### 3. Operations & Seller Analytics
+## Data Model Summary
 
-This page analyzes operational efficiency, delivery performance, seller contribution, and return policies.
+The project uses a relational structure instead of one flat dataset.
 
-Key metrics and visuals:
+| Table       | Purpose                                                                         |
+| ----------- | ------------------------------------------------------------------------------- |
+| `products`  | Stores product name, category, brand, colour, size, weight and warranty details |
+| `orders`    | Stores price, discount, final price, units sold, stock and listing date         |
+| `reviews`   | Stores rating, review count and product score                                   |
+| `logistics` | Stores delivery days and shipping-related fields                                |
+| `returns`   | Stores return policy days and returnable status                                 |
+| `sellers`   | Stores seller name, city and seller rating                                      |
+| `payments`  | Stores available payment modes                                                  |
 
-* Average Seller Rating
-* Average Delivery Days
-* Returnable Products %
-* Average Return Policy Days
-* Top Sellers by Revenue
-* Average Delivery Days by Category
-* Returnable vs Non-Returnable Products
-* Return Policy Days by Category
+This structure supports cleaner analysis across product, customer, seller, logistics and returns dimensions.
 
 ---
 
-## 🖼️ Dashboard Screenshots
+## Dashboard Modules
+
+| Page | Module                          | Focus                                                                             |
+| ---- | ------------------------------- | --------------------------------------------------------------------------------- |
+| 1    | Executive Overview              | Overall revenue, sales, ratings, discounts and product performance                |
+| 2    | Product & Customer Analytics    | Product demand, brand revenue, ratings, reviews and discount behaviour            |
+| 3    | Operations & Seller Analytics   | Seller performance, delivery days, returnable products and return policy analysis |
+| 4    | Navigation / Dashboard Overview | Dashboard navigation, user flow and report structure                              |
+
+---
+
+## Dashboard Preview
 
 ### Executive Overview
-<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/3a5ca146-246c-4095-8ce6-97dc911efe69" />
-<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/3ff89c5d-08b8-42ce-bad8-0acd9720b1e1" />
+<img width="3834" height="2234" alt="flipkart_executive_overview" src="https://github.com/user-attachments/assets/2506f806-b3a4-41c3-9d30-e76a909ec7ae" />
+
 
 
 ### Product & Customer Analytics
-<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/8189392e-87b4-4888-841a-1acf3347fcff" />
+<img width="3834" height="2234" alt="flipkart_product_customer_analytics" src="https://github.com/user-attachments/assets/e61a37ab-e751-4057-9b88-3b82caac4a1a" />
 
 
-### Operations & Seller Analytics
-<img width="2767" height="1600" alt="image" src="https://github.com/user-attachments/assets/550dfa4e-24ed-4506-b8fc-c2316f6cfe24" />
+### Customer & Return Analytics
+<img width="3834" height="2234" alt="flipkart_customer_return_analytics" src="https://github.com/user-attachments/assets/bcf013bc-39ac-46f9-a813-9fa6ae727506" />
+
+
+
+### Seller & Operations Analytics
+<img width="3834" height="2234" alt="flipkart_seller_operations_analytics" src="https://github.com/user-attachments/assets/2a90a6a0-d7d1-45b3-a8a4-446e2cb1a993" />
+
+
 
 
 ---
 
-## 🔍 Key Business Questions Answered
+## Key Metrics Tracked
 
-### 📈 Revenue & Sales
+| Area                | Metrics                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| Sales Performance   | Total Revenue, Total Units Sold, Monthly Revenue Trend       |
+| Product Analytics   | Total Products, Top Products, Product Score, Product Demand  |
+| Customer Response   | Average Rating, Review Count, Rating Distribution            |
+| Pricing & Discounts | Average Discount, Revenue by Discount Range                  |
+| Seller Performance  | Total Sellers, Average Seller Rating, Top Sellers by Revenue |
+| Logistics           | Average Delivery Days, Delivery Days by Category             |
+| Returns             | Returnable Products %, Average Return Policy Days            |
+| Payments            | Payment Mode Distribution                                    |
+
+---
+
+## Key Business Questions Answered
+
+### Revenue & Sales
 
 * Which categories generate the highest revenue?
 * Which products contribute most to revenue?
 * How does revenue change month by month?
 * Which sellers generate the highest sales?
 
-### 💸 Pricing & Discounts
+### Pricing & Discounts
 
 * Which discount ranges contribute the most revenue?
 * Are higher discounts always linked with higher revenue?
 * Which products perform well despite lower discounting?
 
-### ⭐ Customer Behaviour
+### Customer Behaviour
 
 * Which products have the highest review counts?
-* How do product ratings compare across top products?
-* Which brands perform strongly in terms of revenue?
+* How do ratings vary across products and brands?
+* Which brands perform strongly in terms of revenue and customer response?
 
-### 🚚 Logistics & Delivery
+### Logistics & Delivery
 
 * Which categories have higher average delivery days?
 * What is the overall average delivery time?
 * Which categories may need logistics improvement?
 
-### 🔁 Returns & Policies
+### Returns & Policies
 
 * What percentage of products are returnable?
 * Which categories have longer return policy periods?
 * How do return policies vary by category?
 
-### 🏷️ Seller Performance
+### Seller Performance
 
 * Which sellers generate the most revenue?
 * What is the average seller rating?
@@ -148,18 +152,27 @@ Key metrics and visuals:
 
 ---
 
-## 🧠 Key Learnings
+## SQL Analysis Workflow
 
-* Built a relational data model using multiple tables instead of one flat dataset.
-* Used SQL for exploratory data analysis and business question solving.
-* Used Power BI relationships to connect products, orders, reviews, returns, logistics, sellers, and payments.
-* Created DAX measures for revenue, units sold, average rating, returnable percentage, average delivery days, and seller rating.
-* Designed a 3-page professional dashboard with navigation buttons and business-focused visuals.
-* Learned that clear business storytelling is more important than adding too many charts.
+SQL was used to answer business questions before building the dashboard.
+
+The analysis included:
+
+* Revenue by category
+* Top products by revenue
+* Units sold by product and category
+* Seller-wise revenue contribution
+* Discount bucket analysis
+* Rating and review analysis
+* Delivery performance by category
+* Return policy analysis
+* Stock and demand gap checks
+
+This helped validate the business logic before converting the analysis into Power BI visuals.
 
 ---
 
-## 📌 Important DAX Measures
+## Important DAX Measures
 
 ```DAX
 Total Revenue =
@@ -191,23 +204,69 @@ DIVIDE(
 ```
 
 ```DAX
-Avg Delivery Days =
+Average Delivery Days =
 AVERAGE(logistics[delivery_days])
 ```
 
 ---
 
-## 🚀 Future Improvements
+## Key Insights
 
-* Add customer-level data for segmentation and retention analysis.
-* Add profit and cost fields for margin analysis.
-* Build product recommendation analysis.
-* Add forecasting for future revenue and demand.
-* Improve seller analysis using seller IDs and historical seller performance tracking.
-* Deploy dashboard using Power BI Service.
+* Revenue analysis helps identify the categories and products driving business performance.
+* Seller-level analysis highlights which marketplace sellers contribute most to revenue.
+* Discount analysis shows how pricing strategy affects revenue contribution.
+* Rating and review metrics help measure customer response toward products.
+* Delivery days and return policy metrics provide an operational efficiency view.
+* A relational data model improves analysis quality compared with using a single flat table.
 
 ---
 
-## ✅ Conclusion
+## Project Outputs
 
-This project demonstrates end-to-end data analytics workflow: data modeling, SQL-based analysis, Python support, and Power BI dashboard development. The dashboard helps understand revenue performance, product trends, customer response, delivery efficiency, return policies, and seller contribution in an e-commerce business context.
+| Output                | Description                                                                                    |
+| --------------------- | ---------------------------------------------------------------------------------------------- |
+| SQL Analysis          | Business queries written and tested in Jupyter Notebook                                        |
+| Power BI Dashboard    | Interactive dashboard covering sales, products, customers, sellers, logistics and returns      |
+| Data Model            | Relational structure using products, orders, reviews, sellers, logistics, returns and payments |
+| Dashboard Screenshots | Four dashboard screenshots showing the final report pages                                      |
+| Documentation         | README and project explanation for GitHub portfolio                                            |
+
+---
+
+## Skills Demonstrated
+
+* SQL-based business analysis
+* Python and pandas workflow support
+* Jupyter Notebook analysis
+* Relational data modelling
+* Power BI dashboard development
+* DAX measure creation
+* E-commerce analytics
+* Seller and product performance analysis
+* Customer rating and review analysis
+* Logistics and returns analysis
+* Business insight communication
+
+---
+
+## Future Improvements
+
+* Add customer-level data for segmentation and retention analysis.
+* Add cost and profit fields for margin analysis.
+* Build product recommendation analysis.
+* Add revenue and demand forecasting.
+* Improve seller analysis using seller IDs and historical seller performance.
+* Deploy the dashboard using Power BI Service.
+
+---
+
+## Project Positioning
+
+This project demonstrates an end-to-end e-commerce analytics workflow using SQL, Python and Power BI. It combines data modelling, SQL analysis, dashboard development and business interpretation to present a professional data analytics portfolio project.
+
+---
+
+## Author
+
+**Anirva Manchikatla**
+B.Tech CSE | Data Analytics | Business Intelligence | Power BI | SQL
